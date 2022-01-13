@@ -7,12 +7,12 @@ days = hours // 24
 if 1 <= min < 60:
     print(min, 'мин', sec, 'сек')
 elif min >= 60:
-    minute = min % 60
+    minutes = min % 60
     if hours < 24:
-        print(hours, 'ч', minute, 'м', sec, 'с')
+        print(hours, 'ч', minutes, 'м', sec, 'с')
     elif hours >= 24:
         days = hours // 24
-        hhours = hours % 24
-        print(days, 'дн', hhours, 'ч', minute, 'мин', sec, 'сек')
+        Hours = hours % 24
+        print(days, 'дн', Hours, 'ч', minutes, 'мин', sec, 'сек')
 else:
     print(sec, 'сек')
